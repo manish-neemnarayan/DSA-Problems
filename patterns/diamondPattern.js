@@ -35,3 +35,4 @@ function diamondPattern(count) {
     diamondPatternBelow(count);
 }
 diamondPattern(count);
+diamondPattern(4);
