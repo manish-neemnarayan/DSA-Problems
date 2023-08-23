@@ -1,3 +1,10 @@
+/**
+ * Finds two numbers in an array that add up to a given target.
+ *
+ * @param {Array} nums - The array of numbers to search.
+ * @param {number} target - The target sum.
+ * @return {Array} An array containing two numbers that add up to the target sum.
+ */
 function findTwoSum(nums, target) {
   let a = nums[0];
   let z = nums[nums.length - 1];
