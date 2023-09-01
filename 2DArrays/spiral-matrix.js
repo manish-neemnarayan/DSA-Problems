@@ -15,7 +15,7 @@ function spiralMatrix(matrix) {
     let count = 0;
     let result = [];
     while(count < m*n + 1) {
-        // 1.
+        // 1...
         for( let x=startCol; x<=endCol; x++) {
             count += 1;
             result.push(matrix[startRow][x]);
