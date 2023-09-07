@@ -1,27 +1,23 @@
 /**
- * Finds two numbers in an array that add up to a given target.
- *
- * @param {Array} nums - The array of numbers to search.
- * @param {number} target - The target sum.
- * @return {Array} An array containing two numbers that add up to the target sum.
+ * @param {number[]} numbers
+ * @param {number} target
+ * @return {number[]}
  */
-function findTwoSum(nums, target) {
-  let a = nums[0];
-  let z = nums[nums.length - 1];
+var twoSum = function (numbers, target) {
+  let start = 0;
+  let end = numbers.length - 1;
   let sum = 0;
-  for (let i = 1; i < nums.length + 1; i++) {
+  while (start < end) {
+    sum = numbers[start] + numbers[end];
+
     if (sum === target) {
-      return [a, z];
-    } else {
-      sum = a + z;
+      return [start + 1, end + 1];
     }
+
     if (sum < target) {
-      a = nums[i + 1];
-    } else {
-      z = nums[nums.length - i];
+      ++start;
+    } else if (sum > target) {
+      --end;
     }
   }
-}
-
-let sum = findTwoSum([2, 7, 11, 15], 13);
-console.log(sum);
+};
