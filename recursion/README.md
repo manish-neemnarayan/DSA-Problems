@@ -2,6 +2,8 @@
 
 ### PMI - Principle of Mathematics Induction
 
+## It is a prooving technique
+
 ```
 Question: Proove that sum of n natural numbers equals to (n * (n+1))/2.
 
@@ -15,3 +17,10 @@ Having Steps:
 
 3. Self Work: using the fact that formula works for n = k; we will try to proove that formula works for n = k+1 also.
 ```
+
+Notes:
+
+1. It is a programming + math concepts
+2. Recursion is a technique using which we solve bigger problems by calculating answers of smaller subproblems. We generally denote the bigger problem as a function & some arguments and then call the same function with diff arguments denoting smaller subproblems. So we get the ans of smaller subproblems and build the ans for bigger problem.
+   - Recursion is function calling itself.
+   - we try to solve bigger problems using ans of smaller subproblems.
