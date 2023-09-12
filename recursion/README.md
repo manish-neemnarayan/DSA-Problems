@@ -24,3 +24,9 @@ Notes:
 2. Recursion is a technique using which we solve bigger problems by calculating answers of smaller subproblems. We generally denote the bigger problem as a function & some arguments and then call the same function with diff arguments denoting smaller subproblems. So we get the ans of smaller subproblems and build the ans for bigger problem.
    - Recursion is function calling itself.
    - we try to solve bigger problems using ans of smaller subproblems.
+
+## Stacks are linear data structure(mental model to store data in different fashion) in which we can add or reove/ get data from top only.
+
+![Call Stack](/Screenshot%202023-09-12%20090746.png)
+
+![Call Stack](/Screenshot%202023-09-12%20092135.png)
