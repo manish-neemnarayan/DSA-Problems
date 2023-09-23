@@ -1,6 +1,6 @@
 function f(i, n, heights) {
   if (i === n) return 0;
-  if ((i = n - 1))
+  if (i === n - 1)
     return Math.abs(heights[i] - heights[i + 1]) + f(i + 1, n, heights);
   if (i > n) return Infinity;
 
@@ -10,4 +10,4 @@ function f(i, n, heights) {
   return Math.min(minPlus1, minPlus2);
 }
 
-console.log(f(0, 3, [undefined, 10, 30, 40, 20]));
+console.log(f(1, 6, [undefined, 30, 10, 60, 10, 60, 50]));
